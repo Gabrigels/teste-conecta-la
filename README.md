@@ -46,3 +46,11 @@ DB_PASSWORD=Conectala@2025
 
 --php artisan test
 ```
+
+# Collections
+
+```
+# Na raiz do Projeto há um arquivo de Collections que pode ser importado direto do Postman para acesso aos endpoints do exemplos de como executar.
+
+--Observação: A senha está sendo passada como String e no código criptografada para MD5.
+```

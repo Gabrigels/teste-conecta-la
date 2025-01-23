@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "4fc633bd-e9f9-424b-b517-c19769987b3c",
+		"name": "Conecta lá - Usuário",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "9839964"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/usuario/"
+			},
+			"response": []
+		},
+		{
+			"name": "Recuperar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/usuario/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Nome Inclusão\",\n    \"email\": \"teste@conectala.com\",\n    \"senha\": \"Teste123\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Nome Edição\",\n    \"email\": \"teste@edicao.com.br\",\n    \"senha\": \"Teste123\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/usuario/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/usuario/1"
+			},
+			"response": []
+		}
+	]
+}
