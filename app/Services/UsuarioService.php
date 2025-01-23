@@ -26,7 +26,7 @@ class UsuarioService
     {
         $items = $this->repository->listar($params);
 
-        if (isset($items['total']) && $items['total'] < 1) {
+        if (count($items) < 1) {
             return response()->json(['message' => 'Nenhum resultado encontrado'], 404);
         }
 

@@ -38,3 +38,11 @@ DB_DATABASE=conecta_la
 DB_USERNAME=usuario
 DB_PASSWORD=Conectala@2025
 ```
+
+# Testes unitários
+
+```
+# Para rodar os teste unitários basta rodar o comando abaixo:
+
+--php artisan test
+```
